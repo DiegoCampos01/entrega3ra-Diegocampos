@@ -1,0 +1,60 @@
+header {
+    display: grid; /* Cambiamos a grid en lugar de flexbox */
+    grid-template-columns: 1fr auto 1fr; /* Tres columnas con el logotipo en el medio */
+    min-height: 110px;
+    background-color: lightcoral;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px; /* Agregamos espaciado en los lados para que no toque los bordes */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 100px;
+    margin-right: 10px;
+}
+
+header div h2 {
+    font-size: 90px;
+    font-family: "pawwow";
+    src: url(../font/Paw\ Wow.otf);
+}
+
+nav ul {
+    display: flex; /* Para mantener los elementos de navegación en línea */
+    list-style: none;
+}
+
+nav ul li {
+    font-family: 'Grandstander', cursive;
+    font-size: 25px;
+    font-weight: 700;
+    padding-left: 10px;
+}
+
+nav a:hover {
+    color: azure;
+}
+
+@media (max-width: 700px) {
+    header {
+        grid-template-columns: 1fr; /* Una sola columna en dispositivos móviles */
+        grid-template-rows: auto auto; /* Dos filas para el logotipo y la navegación */
+    }
+
+    nav ul {
+        display: grid; /* Cambiamos a grid en dispositivos móviles */
+        grid-template-columns: 1fr; /* Una sola columna para los elementos de navegación */
+        padding: 10px 0; /* Agregamos espaciado arriba y abajo para separar los elementos */
+    }
+
+    nav ul li {
+        padding: 10px 0; /* Agregamos espaciado arriba y abajo para separar los elementos */
+    }
+}
+
+
