@@ -1,0 +1,100 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 20px 0; /* Reducir el espacio en dispositivos móviles */
+    margin: 0 auto;
+    max-width: 100%; /* Hacer que el contenedor se ajuste al ancho de la pantalla */
+}
+
+h1 {
+    position: relative;
+    margin-bottom: 20px; /* Reducir el margen inferior en dispositivos móviles */
+    font-family: 'Oswald', sans-serif;
+    font-size: 28px; /* Reducir el tamaño de fuente en dispositivos móviles */
+    text-transform: uppercase;
+    color: #424242;
+}
+
+.gallery-wrap {
+    display: flex;
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan en dispositivos móviles */
+    width: 100%;
+    height: auto; /* Ajustar la altura automáticamente en dispositivos móviles */
+}
+
+.item {
+    flex: 1;
+    height: 600px; /* Ajustar la altura de los elementos en dispositivos móviles */
+    margin: 1px; /* Agregar margen entre los elementos en dispositivos móviles */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: flex 0.8s ease;
+
+    &:hover {
+        flex: 7;
+    }
+}
+
+/* Agregar estilos específicos para cada elemento en dispositivos móviles */
+.item-1 {
+    background-image: url('../img/1dog.webp');
+}
+
+.item-2 {
+    background-image: url('../img/2dog.webp');
+}
+
+.item-3 {
+    background-image: url('../img/lupa1.webp');
+}
+
+.item-4 {
+    background-image: url('../img/lksylupa.webp');
+}
+
+.item-5 {
+    background-image: url('../img/5dog.webp');
+}
+
+.social {
+    position: absolute;
+    right: 15px; /* Reducir la distancia desde el borde derecho en dispositivos móviles */
+    bottom: 10px; /* Ajustar la posición desde la parte inferior en dispositivos móviles */
+    
+    img {
+        display: block;
+        width: 24px; /* Reducir el tamaño de las imágenes en dispositivos móviles */
+    }
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px 0; /* Reducir aún más el espacio en dispositivos móviles */
+    }
+
+    h1 {
+        font-size: 24px; /* Reducir el tamaño de fuente aún más en dispositivos móviles */
+    }
+
+    .item {
+        flex: 1;
+        height: 150px; /* Ajustar la altura de los elementos aún más en dispositivos móviles */
+        margin: 5px; /* Mantener el margen entre los elementos en dispositivos móviles */
+    }
+
+    .social {
+        right: 10px; /* Ajustar la posición desde el borde derecho aún más en dispositivos móviles */
+        bottom: 5px; /* Ajustar la posición desde la parte inferior aún más en dispositivos móviles */
+        
+        img {
+            width: 20px; /* Reducir el tamaño de las imágenes aún más en dispositivos móviles */
+        }
+    }
+}

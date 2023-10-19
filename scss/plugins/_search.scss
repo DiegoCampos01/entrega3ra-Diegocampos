@@ -8,7 +8,7 @@
   
   body {
     margin: 0;
-    background-color: #ffd8d8;
+    background-color: #ffffff;
   }
   .tb {
     display:  table-cell;
@@ -35,11 +35,11 @@
     top: -20px;
     left: 0;
     width: 20%; /* Cambiamos el ancho al 90% para que sea responsive */
-    margin: 20px auto 0 auto; /* Añadimos margen superior para separarlo del título */
-    padding: 40px; /* Ajustamos el espaciado interior */
+    margin: 40px auto 0 auto; /* Añadimos margen superior para separarlo del título */
+    padding: 50px; /* Ajustamos el espaciado interior */
     background-color: #6abecf;
     border-radius: 20px;
-    box-shadow: 0 10px 30px #edebeb, 0 0 0 20px #ffffffeb;
+    box-shadow: 0 10px 30px #845252, 0 0 0 20px #ffffffeb;
     transform: scale(0.5); /* Dimensiones del search */
 }
 

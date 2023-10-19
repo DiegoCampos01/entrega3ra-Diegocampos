@@ -1,11 +1,9 @@
-/*carrito*/
-
 .inspired-by {
     display: block;
     position: relative;
     margin-bottom: 15px;
     text-align: center;
-    color: #fff;
+    color: #ecc3c3;
     font-size: 14px;
   }
   
@@ -180,4 +178,117 @@
     max-width: 300px;
     height: auto;
   }
+  
+  /**
+   * Paypal Animations
+   */
+  
+  @keyframes show-paypal {
+   0% {
+     opacity: 0;
+     transform: scale(0) translateX(-50%);
+   }
+  
+   85% {
+     opacity: 0;
+   }
+  
+   100% {
+     opacity: 1;
+     transform: scale(1) translateX(-50%);
+   }
+  }
+  
+  .paypal {
+    transform-origin: top left;
+    animation: show-paypal 1s ease-out forwards;
+  }
+  
+  @keyframes show-subheader {
+    0% {
+      opacity: 0;
+      transform: scale(0);
+    }
+  
+    65% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  .paypal__subheader {
+    opacity: 0;
+    animation: show-subheader 1s 0.5s ease-out forwards;
+  }
+  
+  @keyframes slide-down {
+    to {
+      transform: perspective(100px) rotateX(0) translate3d(0, 0, 0);
+    }
+  }
+  
+  .paypal__cart {
+    background-color: #fff;
+  
+    transform-style: preserve-3d;
+    transform-origin: top center;
+    transform: perspective(100px) rotateX(-90deg) translate3d(0, 0, 0);
+  
+    animation: slide-down 0.4s 2s ease-out forwards;
+  }
+  
+  .paypal__footer {
+    background-color: #fff;
+  
+    transform-style: preserve-3d;
+    transform-origin: top center;
+    transform: perspective(100px) rotateX(-90deg) translate3d(0, 0, 0);
+  
+    animation: slide-down 0.4s 2.5s ease-out forwards;
+  }
+  
+  @keyframes show-cart-title {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .paypal__cart-title {
+    opacity: 0;
+    transform: translateY(10px);
+  
+    animation: show-cart-title 0.5s 2.25s ease-in forwards;
+  }
+  
+  @keyframes show-cart-item {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .paypal__cart-item {
+    opacity: 0;
+    transform: translateX(-30px);
+  
+    animation: show-cart-item 0.3s 2.75s ease-in forwards;
+  }
+  
+  .paypal__cart-item:nth-child(2) {
+    animation-delay: 2.9s;
+  }
+  
+  .paypal__cart-item:nth-child(3) {
+    animation-delay: 3.05s;
+  }
+  
+  .paypal__cart-item:nth-child(4) {
+    animation-delay: 3.2s;
+  }
+  
   

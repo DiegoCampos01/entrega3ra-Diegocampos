@@ -1,0 +1,49 @@
+
+header{
+    display: flex;
+    min-height: 110px; /*grosor del menu*/
+    background-color: lightcoral;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+        height: 100px;
+        margin-right: 10px;
+}
+header div h2 {
+    justify-content: space-between;
+    font-size: 90px;
+    font-family: "pawwow"; 
+    src: url(../font/Paw\ Wow.otf)
+
+}
+
+nav ul li{
+    font-family: 'Grandstander', cursive;
+    font-size: 25px;
+    font-weight: 700;
+    padding-left: 10px;
+    list-style: none
+}
+
+nav a:hover{
+    color: azure;
+}
+
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+
+    nav ul li{
+        padding: 10px 0px;
+    }
+}

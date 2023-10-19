@@ -1,0 +1,15 @@
+section{
+    div{
+        width: 300px;
+        height: 200px;
+        background-color: rgb(223, 32, 159);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p{
+            color: azure;
+            text-transform: uppercase;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+*{
+    padding: 0;
+    margin:  0;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+a{ 
+    text-decoration: none;
+    color:black;
+}
+
+/*textologo*/
+@font-face { 
+    font-family: "pawwow"; 
+    src: url(../font/Paw\ Wow.otf); 
+}
+/*texto menu*/
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,400;0,500;1,400&display=swap');
